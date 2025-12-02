@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NS001 - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #0f172a; /* พื้นหลังสีน้ำเงินเข้มเกือบดำ */
+            color: #ffffff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            background-image: radial-gradient(circle at 50% 50%, #1e293b 0%, #0f172a 100%);
+        }
+
+        .container {
+            padding: 2rem;
+            max-width: 600px;
+            width: 100%;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 1rem;
+            background: linear-gradient(90deg, #60a5fa, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        p.description {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            display: inline-block;
+        }
+
+        .contact-label {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .email-link {
+            color: #60a5fa;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: #93c5fd;
+            text-shadow: 0 0 10px rgba(96, 165, 250, 0.5);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .logo { font-size: 2.5rem; }
+            h1 { font-size: 1.5rem; }
+            .email-link { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">NS001</div>
+        
+        <h1>เราจะเปิดให้บริการเร็วๆ นี้</h1>
+        
+        <p class="description">
+            เว็บไซต์ของเรากำลังอยู่ในระหว่างการพัฒนาเพื่อประสบการณ์ที่ดีที่สุด<br>
+            ขอบคุณที่ให้ความสนใจและรอคอย
+        </p>
+
+        <div class="contact-box">
+            <span class="contact-label">ติดต่อสอบถามข้อมูลเพิ่มเติม</span>
+            <a href="mailto:narawit.sur@thaimooc.ac.th" class="email-link">
+                narawit.sur@thaimooc.ac.th
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
